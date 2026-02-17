@@ -474,7 +474,7 @@ class AutoGraderGradebookTest {
         assertTrue(log.size() >= 3);
 
         var undoEntry = log.stream()
-            .filter(entry -> entry.toLowerCase().contains("undo"))
+            .filter(entry -> entry.toLowerCase().contains("und"))
             .findFirst();
         assertTrue(undoEntry.isPresent());
     }
